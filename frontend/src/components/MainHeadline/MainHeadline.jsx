@@ -7,7 +7,7 @@ const MainHeadline = () => {
          <h3 className="text-center text-white text-[22px] mt-2 drop-shadow-lg lg:text-[24px]">
             8th of March, 2025
          </h3>
-         <h1 className="text-center text-white text-[22px] mt-2 drop-shadow-lg lg:text-[14px]">
+         <h1 className="text-center text-white text-[12px] mt-2 drop-shadow-lg lg:text-[14px]">
          "I have found the one whom my soul loves."
          <br /> Song of Solomon 3:4
          </h1>
