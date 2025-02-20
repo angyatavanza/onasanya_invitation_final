@@ -68,7 +68,7 @@ const ModalWeather = () => {
             <div className="h-[150px] lg:h-[200px] flex pt-[4vh]">
                <h2 className="text-2xl font-semibold text-center text-white z-50
                   lg:text-3xl">
-                  ¿Qué pasa con <br className="md:hidden"></br> el clima?
+                  What will the weather <br className="md:hidden"></br> be like?
                </h2>
             </div> 
             <img 
@@ -89,25 +89,25 @@ const ModalWeather = () => {
             <article className="flex flex-col gap-2 w-full">
                <section className="flex items-center gap-2 mb-4">
                   <img src={`${localWeather?.current?.condition?.icon}`} alt="" className='h-12' />
-                  <h2 className='font-semibold text-lg'>Pronóstico: {localWeather?.current?.condition?.text}</h2>
+                  <h2 className='font-semibold text-lg'>Forecast: {localWeather?.current?.condition?.text}</h2>
                </section>
                <div className='flex flex-col flex-wrap gap-1'>
-                  <span className='italic text-base'>Temperatura actual:</span>
+                  <span className='italic text-base'>Actual Temp:</span>
                   <span className='font-bold text-xl'> {localWeather?.current?.temp_c}° </span>
                   <hr className='w-56 border-1 border-green' />
                </div>
                <div className='flex flex-col flex-wrap gap-1'>
-                  <span className='italic text-base'>Sensación térmica: </span>
+                  <span className='italic text-base'>What it feels like: </span>
                   <span className='font-bold text-xl'> {localWeather?.current?.feelslike_c}° </span>
                   <hr className='w-56 border-1 border-green' />
                </div>
                <div className='flex flex-col flex-wrap gap-1'>
-                  <span className='italic text-base'>Humedad:</span>
+                  <span className='italic text-base'>Humidity:</span>
                   <span className='font-semibold text-xl'> {localWeather?.current?.humidity}% </span>
                   <hr className='w-56 border-1 border-green' />
                </div>
                <div className='flex flex-col flex-wrap mt-4 gap-1'>
-                  <span className='italic text-base'>Mañana:</span>
+                  <span className='italic text-base'>Tomorrow:</span>
                   <span className='font-semibold text-sm'>{futureWeather?.forecast?.forecastday[0]?.day?.condition?.text}.</span>
                   <span className=' font-bold text-xl'> 
                      {futureWeather?.forecast?.forecastday[0]?.day?.maxtemp_c}° 
@@ -116,20 +116,13 @@ const ModalWeather = () => {
                      <span className='text-base ms-2'>(min.)</span>
                   </span>
                   <hr className='w-56 border-1 border-green' />
-                  <span className='flex mt-4'> 
-                  <img src="./assets/images/warning-icon.png" alt="" className='h-14 pe-3 self-center'/>
-                     <p>
-                        <span className='font-semibold text-sm'>Alerta Naranja<br></br></span>
-                        <span className='text-sm font-normal'>Fuertes resacas, moderado dolor de cabeza y náuseas. Posibilidad de amnesia temporal.</span>
-                     </p>
-                  </span>
                </div>
             </article>
 
          </main>
 
          <footer className='h-[8vh] bg-green flex items-center justify-center rounded-b-md'>
-            <img src="./assets/images/cbu-footer.png" alt="" className=" h-3/6" />
+            <img src="./assets/images/names.png" alt="" className=" h-3/6" />
          </footer>
 
       </div>

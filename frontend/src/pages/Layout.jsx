@@ -60,7 +60,7 @@ const Layout = () => {
 
             <Countdown />
             <Button
-               buttonText={ 'Agendar' }
+               buttonText={ 'View our Invite' }
                colorCode={"bg-green"}
                url={'calendar'}
             />
@@ -75,14 +75,14 @@ const Layout = () => {
                      alt={"church icon"}
                   />
                   <InfoSection
-                     header={"Ceremonia | 17:00 pm"}
-                     subtitle={"Nuestra Señora del Perpetuo Socorro"}
+                     header={"Ceremony | 3:00 pm"}
+                     subtitle={"Holt Chapel"}
                      lineColorCode={"border-green"}
                   >
-                     Mazzolari 1 | Chacras de Coria, Mendoza
+                     Our wedding ceremony will take place at the Holt Chapel at Elon University at 3:00 PM. Doors will open at 2:30 PM.
                   </InfoSection>
                   <Button
-                     buttonText={"¿Cómo llego?"}
+                     buttonText={"How do I get there?"}
                      colorCode={"bg-green"}
                      url={'church'}
                   />
@@ -91,18 +91,18 @@ const Layout = () => {
                {/* Party section ---------- */}
                <SectionContainerElement>
                   <ImageComponent
-                     src={"/assets/images/music-icon.png"}
+                     src={"/assets/images/heart-icon.png"}
                      alt={"Icono música"}
                   />
                   <InfoSection
-                     header={"Fiesta | 19:00 pm"}
-                     subtitle={"Finca AMproS"}
+                     header={"Cocktail Hour | 4:45 pm"}
+                     subtitle={"The Inn at Elon"}
                      lineColorCode={"border-green"}
                   >
-                     C. Pescara, Cruz de Piedra, Maipú, Mendoza
+                     Following the ceremony, please join us for a cocktail hour at 4:45 PM at the Inn at Elon.
                   </InfoSection>
                   <Button
-                     buttonText={"¿Cómo llego?"}
+                     buttonText={"How do I get there?"}
                      colorCode={"bg-green"}
                      url={'salon'}
                   />
@@ -110,19 +110,19 @@ const Layout = () => {
 
                {/* Present section (only Desktop) ---------- */}
                <SectionContainerElement mobileView={ 'off' }>
-                  <ImageComponent
-                     src={"/assets/images/plane-icon.png"}
-                     alt={"plane icon"}
+               <ImageComponent
+                     src={"/assets/images/music-icon.png"}
+                     alt={"Icono música"}
                   />
                   <InfoSection
-                     header={"¿Qué les regalo?"}
+                     header={"Reception | 6:00 pm"}
+                     subtitle={"The Inn at Elon"}
                      lineColorCode={"border-green"}
                   >
-                     ¿El mejor regalo? tu presencia, pero si querés cumplirnos un sueño hacé click.
-
+                     Following the cocktail hour, the reception will begin at 6:00 PM at the Inn at Elon.
                   </InfoSection>
                   <Button
-                     buttonText={'Ver información'}
+                     buttonText={'View all the Details'}
                      colorCode={'bg-green'}
                      url={false}
                      action={'openInfoModal'}
@@ -151,13 +151,13 @@ const Layout = () => {
                   />
                   <div className="flex flex-col items-center">
                      <InfoSection
-                        header={'¿Qué me pongo?'}
-                        subtitle={'Dresscode: Vos metele facha y comodidad porque, oxidados o no, vamos a bailar.'}
+                        header={'What do I wear?'}
+                        subtitle={'Dresscode: We kindly request formal attire for the evening. If you need inspiration for formal attire, you are welcome to view inspiration on Pinterest! '}
                         lineColorCode={'border-mustard'}
                      >
                      </InfoSection>
                      <Button
-                        buttonText={'Mirá el clima'}
+                        buttonText={'Weather on March 8th'}
                         colorCode={'bg-mustard'}
                         action={'openWeatherModal'}
                      />
@@ -167,23 +167,22 @@ const Layout = () => {
                {/* Music section ---------- */}
                <SectionContainerElement>
                   <ImageComponent
-                     src={"/assets/images/dance-icon.png"}
-                     alt={"Icono baile"}
+                     src={"/assets/images/plane-icon.png"}
+                     alt={"Plane baile"}
                   />
                   <InfoSection
-                     header={"#ModoDJ"}
+                     header={"Accommodations"}
                      lineColorCode={'border-mustard'}
                   >
-                     Ayudanos a armar la lista y no dejar afuera ningún tema de esos que te hacen darlo todo.
+                     While we do not have reserved room blocks, we recommend staying at: DoubleTree by Hilton Greensboro or Marriott Greensboro Downtown
                   </InfoSection>
                   <Button
-                     buttonText={"Añadir tu tema"}
+                     buttonText={"Book Accomodations"}
                      widthClass={"w-64"}
                      colorCode={"bg-mustard"}
                      url={'spotify'}
                   />
                </SectionContainerElement>
-
                {/* Confirmation section (only Desktop) ---------- */}
                <SectionContainerElement mobileView={ 'off' }>
                   <ImageComponent
@@ -192,19 +191,17 @@ const Layout = () => {
                      margin={"disabled"}
                   />
                   <InfoSection
-                     header={'¿Hay equipo?'}
+                     header={'Ready to RSVP?'}
                      lineColorCode={'border-mustard'}
                   >
-                     Esperamos que puedas acompañarnos.
-                     PD: Si no confirmás nos dolerá
-                     el bolsillo (y el alma).
+                     We hope you can joing us! Please RSVP by February 21st at 11 PM to confirm your attendance at our event so we can finalize arrangements.
 
                   </InfoSection>
                   <Button
-                     buttonText={'Confirmar asistencia'}
-                     
-                     colorCode={'bg-mustard'}
-                     action={'openConfirmationModal'}
+                     buttonText={"RSVP Now"}
+                     widthClass={"w-64"}
+                     colorCode={"bg-mustard"}
+                     url={'calendar'}
                   />
                </SectionContainerElement>
 

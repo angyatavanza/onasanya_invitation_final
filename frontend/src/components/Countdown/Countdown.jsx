@@ -74,7 +74,7 @@ class FlipClock extends Component {
 	}
 
 	updateTime() {
-		const targetDate = new Date(2024, 2, 9, 18, 0, 0);
+		const targetDate = new Date(2025, 2, 8, 14, 0, 0);
 
 		// Fecha actual
 		const currentDate = new Date();
@@ -120,8 +120,8 @@ class FlipClock extends Component {
 
 		return (
 			<>
-				<h5  className='text-xl text-center font-medium w-64 text-white tracking-wide mb-4
-					lg:text-2xl lg:pb-8'>Faltan...</h5>
+					<h5  className='text-xl text-center font-medium w-64 text-white tracking-wide mb-4
+					lg:text-2xl lg:pb-8'>There are...</h5>
 				<div className={'flipClock'}>
 					<FlipUnitContainer unit={'months'} digit={months} shuffle={monthsShuffle} />
 					<FlipUnitContainer unit={'days'} digit={days} shuffle={daysShuffle} />
@@ -131,11 +131,11 @@ class FlipClock extends Component {
 				</div>
 				<div className='grid grid-rows-1 grid-cols-5 gap-1 text-xs w-full md:w-[764px] mt-3 text-center
 					lg:text-base'>
-					<div>mes</div>
-					<div>días</div>
-					<div>hrs</div>
+					<div>months</div>
+					<div>days</div>
+					<div>hours</div>
 					<div>min</div>
-					<div>seg</div>
+					<div>sec</div>
 				</div>
 			</>
 		);

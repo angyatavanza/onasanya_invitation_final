@@ -36,7 +36,7 @@ const ButtonGift = () => {
          }
       >
          <section className='relative'>
-            <img src="/assets/images/gift-icon.png" alt="Heart icon" className='absolute top-0 left-0 drop-shadow-md' />
+            <img src="/assets/images/heart-icon.png" alt="Heart icon" className='absolute top-0 left-0 drop-shadow-md' />
             {
                clicked &&
                <span className="relative flex h-3 w-3">

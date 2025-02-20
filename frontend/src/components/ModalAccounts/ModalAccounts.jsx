@@ -26,7 +26,7 @@ const ModalAccounts = () => {
             <div className="h-[150px] md:h-[150px] lg:h-[150px] flex pt-[4vh]">
                <h2 className="text-2xl font-semibold text-center text-white z-50
                   lg:text-3xl">
-                  ¿No sabés que <br className="md:hidden"></br> regalarnos?
+                  The <br className="md:hidden"></br> details
                </h2>
             </div> 
             <img 
@@ -36,207 +36,31 @@ const ModalAccounts = () => {
                className="absolute top-4 right-4 h-10 cursor-pointer rounded-md z-50
                   transition-all delay-50 duration-150 hover:cursor-pointer hover:scale-90 hover:drop-shadow-md hover:rotate-90" 
             />
-            <img src="./assets/images/cbu-header-pieces-03.png" alt="Gift animation" className="h-16 absolute -bottom-4 right-5 jumping-element lg:h-20 lg:-bottom-4 lg:right-12" />
             <img src="./assets/images/cbu-header-pieces-06.png" alt="Star animation" className="h-4 absolute top-2 left-12 jumping-element-reverse lg:h-5 lg:top-5 lg:left-20" />
-            <img src="./assets/images/cbu-header-pieces-04.png" alt="Coins animation" className="h-10 absolute top-16 left-2 jumping-element-reverse lg:h-16 lg:top-16 lg:left-12" />
             <img src="./assets/images/cbu-header-pieces-01.png" alt="" className="h-6 absolute bottom-2 left-5 jumping-element lg:h-8 lg:-bottom-2" />
          </header>
 
          <main className='flex flex-col items-center gap-8 grow bg-cream p-6 text-gray-dark text-sm'>
-
+            <img src="./assets/images/1.png" alt="" className='flex flex-col items-center gap-8 grow bg-cream p-6 text-gray-dark text-sm'/>
+            <img src="./assets/images/2.png" alt="" className='flex flex-col items-center gap-8 grow bg-cream p-6 text-gray-dark text-sm'/>
             {/* Patagonia Bank Section */}
-            <article className="flex flex-col gap-2 w-full
-            lg:w-[450px]">
-               <section className="flex items-center gap-2">
-                  <img src="./assets/images/green-arrows-icon.png" alt="" className='h-6'/>
-                  <h2 className='font-semibold text-base'>BANCO BBVA</h2>
-               </section>
-               <div className="flex flex-col gap-1.5">
-                  <div className='flex-wrap'>
-                     <span className='italic'>Titular :</span>
-                     <span className='font-semibold'> Federico Rouyere</span>
-                  </div>
-                  <div className='flex items-center gap-2 flex-wrap'>
-                     <span className='italic'>Alias :</span>
-                        <div className='flex items-center gap-2'>
-                           <span className='font-semibold'> FEDERICO.CASPER.BBVA</span>
-                        </div>
-                        <button
-                           className="group relative inline-flex " >
-                           <img 
-                              onClick={ () => copyToClipboard('FEDERICO.CASPER.BBVA') } 
-                              src="./assets/images/copy-icon.png" 
-                              alt=" Boton copiar " 
-                              title='Copiar' 
-                              className='h-6 cursor-pointer
-                              transition origin-bottom-left duration-300 ease-in-out hover:scale-110 hover:rotate-3' />
-                           <div className="hidden group-hover:block">
-                              <div
-                                 className="group absolute -top-12 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-cream before:-top-2">
-                                 <div className={`rounded-md py-1 px-2 ${ copied ? 'bg-mustard' : 'bg-green' }`}>
-                                    <p className="whitespace-nowrap">{ copied ? 'Copiado!' : 'Copiar' }</p>
-                                 </div>
-                              </div>
-                           </div>
-                        </button>
-                  </div>
-                  <div className='flex-wrap'>
-                     <span className='italic'>CUIL/CUIT :</span>
-                     <span className='font-semibold'> 20308193242</span>
-                  </div>
-                  <div className='flex items-center gap-2 flex-wrap'>
-                     <span className='italic'>CBU :</span>
-                     <div className='flex items-center gap-2'>
-                        <span className='font-semibold'> 0170237040000005581238</span>
-                        <button
-                           className="group relative inline-flex " >
-                           <img 
-                              onClick={ () => copyToClipboard('0170237040000005581238') } 
-                              src="./assets/images/copy-icon.png" 
-                              alt=" Boton copiar " 
-                              title='Copiar' 
-                              className='h-6 cursor-pointer
-                              transition origin-bottom-left duration-300 ease-in-out hover:scale-110 hover:rotate-3' />
-                           <div className="hidden group-hover:block">
-                              <div
-                                 className="group absolute -top-12 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-[#EAE8E4] before:-top-2">
-                                 <div className={`rounded-md py-1 px-2 ${ copied ? 'bg-mustard' : 'bg-green' }`}>
-                                    <p className="whitespace-nowrap">{ copied ? 'Copiado!' : 'Copiar' }</p>
-                                 </div>
-                              </div>
-                           </div>
-                        </button>
-                     </div>
-                  </div>
-               </div>
-            </article>
-
-            {/* Dolars Section */}
-            <article className="flex flex-col gap-2 w-full
-               lg:w-[450px]">
-               <section className="flex items-center gap-2">
-                  <img src="./assets/images/green-arrows-icon.png" alt="" className='h-6'/>
-                  <h2 className='font-semibold text-base'>MONEDA EXTRANJERA</h2>
-               </section>
-               <p >
-                  <span className='italic text-sm leading-6'>
-                     No tenemos cuentas para recibir dinero extranjero, por lo tanto 👉🏼 sobre en mano.<br></br>
-                     <span className='font-semibold not-italic'> Requisito único : </span>
-                     No dólar cara chica o estropeado (después nadie nos los recibe 😥)
-                  </span>
-               </p>
-            </article>
+           
 
             {/* Western Union Section */}
-            <article className="flex flex-col gap-2 w-full
-               lg:w-[450px]">
-               <section className="flex items-center gap-2">
-                  <img src="./assets/images/green-arrows-icon.png" alt="" className='h-6'/>
-                  <h2 className='font-semibold text-base'>WESTERN UNION</h2>
-               </section>
-               <p >
-                  <span className='italic text-sm leading-6'>
-                     Si estás afuera y de alguna manera querés hacernos llegar tu cariño 👉🏼 Western Union.
-                     Y no olvides mandarnos el comprobante. 😏
-                  </span>
-               </p>
-               <div className='flex items-center gap-2 flex-wrap'>
-                  <span className='italic'>Nombre :</span>
-                  <div className='flex items-center gap-2'>
-                     <span className='font-semibold'> Federica Risso Patrón</span>
-                     <button
-                        className="group relative inline-flex " >
-                        <img 
-                           onClick={ () => copyToClipboard('Federica Risso Patrón') } 
-                           src="./assets/images/copy-icon.png" 
-                           alt=" Boton copiar " 
-                           title='Copiar' 
-                           className='h-6 cursor-pointer
-                           transition origin-bottom-left duration-300 ease-in-out hover:scale-110 hover:rotate-3' />
-                        <div className="hidden group-hover:block">
-                           <div
-                              className="group absolute -top-12 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-[#EAE8E4] before:-top-2">
-                              <div className={`rounded-md py-1 px-2 ${ copied ? 'bg-mustard' : 'bg-green' }`}>
-                                 <p className="whitespace-nowrap">{ copied ? 'Copiado!' : 'Copiar' }</p>
-                              </div>
-                           </div>
-                        </div>
-                     </button>
-                  </div>
-               </div>
-               <div className='flex items-center gap-2 flex-wrap'>
-                  <span className='italic'>DNI :</span>
-                  <div className='flex items-center gap-2'>
-                     <span className='font-semibold'> 35183885</span>
-                     <button
-                        className="group relative inline-flex " >
-                        <img 
-                           onClick={ () => copyToClipboard('35183885') } 
-                           src="./assets/images/copy-icon.png" 
-                           alt=" Boton copiar " 
-                           title='Copiar' 
-                           className='h-6 cursor-pointer
-                           transition origin-bottom-left duration-300 ease-in-out hover:scale-110 hover:rotate-3' />
-                        <div className="hidden group-hover:block">
-                           <div
-                              className="group absolute -top-12 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-[#EAE8E4] before:-top-2">
-                              <div className={`rounded-md py-1 px-2 ${ copied ? 'bg-mustard' : 'bg-green' }`}>
-                                 <p className="whitespace-nowrap">{ copied ? 'Copiado!' : 'Copiar' }</p>
-                              </div>
-                           </div>
-                        </div>
-                     </button>
-                  </div>
-               </div>
-            </article>
+            
 
             {/* Western Union Section */}
-            <article className="flex flex-col gap-2 w-full
-               lg:w-[450px]">
-               <section className="flex items-center gap-2">
-                  <img src="./assets/images/green-arrows-icon.png" alt="" className='h-6'/>
-                  <h2 className='font-semibold text-base'>PAYONEER</h2>
-               </section>
-               <p >
-                  <span className='italic text-sm leading-6'>
-                     También tenemos cuenta en payoneer. 😎
-                  </span>
-               </p>
-               <div className='flex items-center gap-2 flex-wrap'>
-                  <span className='italic'>Mail :</span>
-                  <div className='flex items-center gap-2'>
-                     <span className='font-semibold'> federicarissopatron@gmail.com</span>
-                     <button
-                        className="group relative inline-flex " >
-                        <img 
-                           onClick={ () => copyToClipboard('federicarissopatron@gmail.com') } 
-                           src="./assets/images/copy-icon.png" 
-                           alt=" Boton copiar " 
-                           title='Copiar' 
-                           className='h-6 cursor-pointer
-                           transition origin-bottom-left duration-300 ease-in-out hover:scale-110 hover:rotate-3' />
-                        <div className="hidden group-hover:block">
-                           <div
-                              className="group absolute -top-12 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-[#EAE8E4] before:-top-2">
-                              <div className={`rounded-md py-1 px-2 ${ copied ? 'bg-mustard' : 'bg-green' }`}>
-                                 <p className="whitespace-nowrap">{ copied ? 'Copiado!' : 'Copiar' }</p>
-                              </div>
-                           </div>
-                        </div>
-                     </button>
-                  </div>
-               </div>
-            </article>
+         
 
                <article className='flex flex-col gap-3 items-center mt-2'>
                   <hr className='w-48 border border-[#5D7551]' />
-                  <h2 className='text-lg font-medium'>¡Desde ya mil gracias!</h2>
+                  <h2 className='text-lg font-medium'>Thank you</h2>
                </article>
 
          </main>
 
          <footer className='h-[8vh] bg-green flex items-center justify-center rounded-b-md'>
-            <img src="./assets/images/cbu-footer.png" alt="" className=" h-3/6" />
+            <img src="./assets/images/names.png" alt="" className=" h-3/6" />
          </footer>
 
       </div>
