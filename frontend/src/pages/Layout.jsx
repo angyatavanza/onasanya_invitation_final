@@ -217,56 +217,6 @@ const Layout = () => {
             {/* Confirmation and present container ---------- */}
             <SectionContainer>
 
-               {/* Confirmation section ---------- */}
-               <SectionContainerElement desktopView={ 'off' }>
-                  <ImageComponent
-                     src={"/assets/images/confirm-icon.png"}
-                     alt={"Icono confimación"}
-                     margin={"disabled"}
-                  />
-                  <InfoSection
-                     header={'¿Hay equipo?'}
-                     lineColorCode={'border-mustard'}
-                     textColorCode={'text-gray-dark'}
-                  >
-                     Esperamos que puedas acompañarnos.
-                     PD: Si no confirmás nos dolerá
-                     el bolsillo (y el alma).
-
-                  </InfoSection>
-                  <Button
-                     buttonText={ sent ? 'Formulario enviado' : 'Confirmar asistencia' }
-                     disabled={ sent }
-                     colorCode={'bg-green'}
-                     action={'openConfirmationModal'}
-                  />
-               </SectionContainerElement>
-
-               {/* Present section ---------- */}
-               <SectionContainerElement desktopView={ 'off' }>
-                  <ImageComponent
-                     src={"/assets/images/plane-icon.png"}
-                     alt={"plane icon"}
-                  />
-                  <InfoSection
-                     header={"¿Qué les regalo?"}
-                     lineColorCode={"border-mustard"}
-                     textColorCode={"text-gray-dark"}
-                  >
-                     ¿El mejor regalo? tu presencia,
-                     pero si querés ayudarnos a cumplir
-                     un sueño hacé click en el botón.
-
-                  </InfoSection>
-                  <Button
-                     buttonText={'Ver información'}
-                     
-                     colorCode={'bg-green'}
-                     url={false}
-                     action={'openInfoModal'}
-                  />
-               </SectionContainerElement>
-
             </SectionContainer>
 
             <section className="hidden lg:flex lg:w-full lg:justify-center">

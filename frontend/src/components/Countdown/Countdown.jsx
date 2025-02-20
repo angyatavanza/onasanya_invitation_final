@@ -121,7 +121,7 @@ class FlipClock extends Component {
 		return (
 			<>
 					<h5  className='text-xl text-center font-medium w-64 text-white tracking-wide mb-4
-					lg:text-2xl lg:pb-8'>There are...</h5>
+					lg:text-2xl lg:pb-8'>Ready or Knot? Our Journey to Forever Begins in...</h5>
 				<div className={'flipClock'}>
 					<FlipUnitContainer unit={'months'} digit={months} shuffle={monthsShuffle} />
 					<FlipUnitContainer unit={'days'} digit={days} shuffle={daysShuffle} />
