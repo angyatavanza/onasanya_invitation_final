@@ -122,7 +122,7 @@ const Layout = () => {
                      Following the cocktail hour, the reception will begin at 6:00 PM at the Inn at Elon.
                   </InfoSection>
                   <Button
-                     buttonText={'View all the Details'}
+                     buttonText={'View all the details'}
                      colorCode={'bg-green'}
                      url={false}
                      action={'openInfoModal'}
@@ -177,7 +177,7 @@ const Layout = () => {
                      While we do not have reserved room blocks, we recommend staying at: DoubleTree by Hilton Greensboro or Marriott Greensboro Downtown
                   </InfoSection>
                   <Button
-                     buttonText={"Book Accomodations"}
+                     buttonText={"Book accomodations"}
                      widthClass={"w-64"}
                      colorCode={"bg-mustard"}
                      url={'spotify'}
@@ -194,7 +194,7 @@ const Layout = () => {
                      header={'Ready to RSVP?'}
                      lineColorCode={'border-mustard'}
                   >
-                     We hope you can joing us! Please RSVP by February 21st at 11 PM to confirm your attendance at our event so we can finalize arrangements.
+                     We hope you can join us! Please RSVP by February 21st at 11 PM to confirm your attendance at our event so we can finalize arrangements.
 
                   </InfoSection>
                   <Button
@@ -216,7 +216,51 @@ const Layout = () => {
 
             {/* Confirmation and present container ---------- */}
             <SectionContainer>
+                 {/* Confirmation section ---------- */}
+                 <SectionContainerElement desktopView={ 'off' }>
+                  <ImageComponent
+                     src={"/assets/images/confirm-icon.png"}
+                     alt={"Icono confimación"}
+                     margin={"disabled"}
+                  />
+                  <InfoSection
+                     header={'Ready to RSVP?'}
+                     lineColorCode={'border-mustard'}
+                     textColorCode={'text-gray-dark'}
+                  >
+                     We hope you can join us! Please RSVP by February 21st at 11 PM to confirm your attendance at our event so we can finalize arrangements..
 
+                  </InfoSection>
+                  <Button
+                     buttonText={"RSVP Now"}
+                     widthClass={"w-64"}
+                     colorCode={"bg-mustard"}
+                     url={'calendar'}
+                  />
+               </SectionContainerElement>
+
+               {/* Present section ---------- */}
+               <SectionContainerElement desktopView={ 'off' }>
+                  <ImageComponent
+                     src={"/assets/images/music-icon.png"}
+                     alt={"musica icon"}
+                  />
+                  <InfoSection
+                     header={"Reception | 6:00 pm"}
+                     lineColorCode={"border-mustard"}
+                     textColorCode={"text-gray-dark"}
+                  >
+                      Following the cocktail hour, the reception will begin at 6:00 PM at the Inn at Elon.
+
+                  </InfoSection>
+                  <Button
+                     buttonText={'View all the details'}
+                     
+                     colorCode={'bg-green'}
+                     url={false}
+                     action={'openInfoModal'}
+                  />
+               </SectionContainerElement>
             </SectionContainer>
 
             <section className="hidden lg:flex lg:w-full lg:justify-center">
