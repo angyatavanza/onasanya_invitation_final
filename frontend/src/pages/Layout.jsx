@@ -115,11 +115,11 @@ const Layout = () => {
                      alt={"Icono música"}
                   />
                   <InfoSection
-                     header={"Reception | 6:00 pm"}
+                     header={"Reception | 5:30 pm"}
                      subtitle={"The Inn at Elon"}
                      lineColorCode={"border-green"}
                   >
-                     Following the cocktail hour, the reception will begin at 6:00 PM at the Inn at Elon.
+                     Following the cocktail hour, the reception will begin at 5:30 PM at the Inn at Elon.
                   </InfoSection>
                   <Button
                      buttonText={'View all the details'}
@@ -246,11 +246,11 @@ const Layout = () => {
                      alt={"musica icon"}
                   />
                   <InfoSection
-                     header={"Reception | 6:00 pm"}
+                     header={"Reception | 5:30 pm"}
                      lineColorCode={"border-mustard"}
                      textColorCode={"text-gray-dark"}
                   >
-                      Following the cocktail hour, the reception will begin at 6:00 PM at the Inn at Elon.
+                      Following the cocktail hour, the reception will begin at 5:30 PM at the Inn at Elon.
 
                   </InfoSection>
                   <Button
